@@ -45,7 +45,7 @@ if (assignmentContainer) {
       let dueColor;
       if (distance <= 0) {
         const assignmentstate = row.children[5].innerText;
-        dueColor = assignmentstate === "Afleveret" ? "" : "#FF0000"
+        dueColor = assignmentstate === "Afleveret" ? "" : "#FF0000";
       } else if (days < 1) {
         dueColor = "#FF0000";
       } else if (days < 2) {
@@ -81,41 +81,45 @@ const fmtOptions = {
 };
 
 function getCountdownTime(input) {
-  // Match the expected format: DD/MM-YYYY HH:mm
-  const dateRegex = /^(\d+)\/(\d+)-(\d+) (\d+):(\d+)$/;
+  console.log("DEBUG date input:", input);
+
+  // Match D/M-YYYY HH:mm  (e.g., 1/3-2026 12:00)
+  const dateRegex = /^(\d{1,2})\/(\d{1,2})-(\d{4}) (\d{1,2}):(\d{2})$/;
   const match = input.match(dateRegex);
 
   if (!match) {
-    console.error("Invalid date format:", input);
-    return NaN; // Return NaN for invalid formats
+    console.error("Fejl Dato – invalid format:", input);
+    return NaN;
   }
 
-  var [, day, month, year, hour, minute] = match;
+  let [, day, month, year, hour, minute] = match;
 
-  // Ensure two-digit representation for day and month;
-  // this D/M-YYYY HH:mm date format causes errors.
   day = day.padStart(2, "0");
   month = month.padStart(2, "0");
 
   const formattedDateString = `${year}-${month}-${day}T${hour}:${minute}:00`;
   const copenhagenDate = new Date(formattedDateString);
 
-  const currentTime = new Date().toLocaleString('da-DK', fmtOptions).replace(/(\d+)\.(\d+)\.(\d+) (\d+)\.(\d+)\.(\d+)/, "$3-$2-$1T$4:$5:$6");
-  const today = new Date(currentTime);
+  const now = new Date();
+  const distance = copenhagenDate.getTime() - now.getTime();
 
-  return distance = copenhagenDate.getTime() - today.getTime();
+  if (isNaN(distance)) {
+    console.error("Fejl Dato – could not compute:", formattedDateString);
+    return NaN;
+  }
+
+  return distance;
 }
 
 function formatDueText(days, hours, minutes, seconds) {
-  if (days < 1) {
-    return hours < 1 ? `(Om ${minutes}M ${seconds}S)` : `(Om ${hours}H ${minutes}M)`;
-  } else if (days < 2) {
-    return `(Om ${days}D ${hours}H ${minutes}M)`;
-  } else if (days < 14) {
-    return `(Om ${days}D ${hours}H)`;
-  } else {
-    return `(Om ${days}D)`;
-  } 
+  // Return a user-friendly Danish text for the remaining time, e.g. "2 dage 3 timer 5 min"
+  const parts = [];
+  if (days > 0) parts.push(days + (days === 1 ? ' dag' : ' dage'));
+  if (hours > 0) parts.push(hours + (hours === 1 ? ' time' : ' timer'));
+  if (minutes > 0) parts.push(minutes + (minutes === 1 ? ' min' : ' min'));
+  // Only include seconds if nothing else is present
+  if (parts.length === 0) parts.push(seconds + (seconds === 1 ? ' sek' : ' sek'));
+  return parts.join(' ');
 }
 
 // ------------------------- Toggles -------------------------
