@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "FOSS Lectio improvements",
+  "name": "Vitus Lectio improvements",
   "version": "1.5.2",
   "description": "A free and open source browser extension for Lectio with QoL features.",
   "icons": {
