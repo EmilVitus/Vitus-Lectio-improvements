@@ -7,7 +7,7 @@
 
 <br>
 
-Dette er en fork af (FOSS Lectio Improvements)[https://github.com/logicguy1/FOSS-Lectio-improvements/tree/chrome] som fjerner nogle af de ting som ikke virkler eller efter min mening ikke rigtig gør lectio bedre. Jeg bruger selv også (Lectio++)[https://chromewebstore.google.com/detail/lectio++/ldjoanojmkabkhjkjaakpcgncbhogndp] så ting som "Assignment deadline countdown timer with colors" har jeg bare fjernet da det ikke virkede og (Lectio++)[https://chromewebstore.google.com/detail/lectio++/ldjoanojmkabkhjkjaakpcgncbhogndp] aligevæl har den funktion, bare hvor det virker. 
+Dette er en fork af [FOSS Lectio Improvements](https://github.com/logicguy1/FOSS-Lectio-improvements/tree/chrome) som fjerner nogle af de ting som ikke virkler eller efter min mening ikke rigtig gør lectio bedre. Jeg bruger selv også [Lectio++](https://chromewebstore.google.com/detail/lectio++/ldjoanojmkabkhjkjaakpcgncbhogndp) så ting som "Assignment deadline countdown timer with colors" har jeg bare fjernet da det ikke virkede og [Lectio++](https://chromewebstore.google.com/detail/lectio++/ldjoanojmkabkhjkjaakpcgncbhogndp) aligevæl har den funktion, bare hvor det virker. 
 Denne fork er derfor også kun en Chrome-udvidelse da det nok giver mere mening at fikse det som der er fejl i, i en firefox version, istedet for at fjerne det.
 
 
