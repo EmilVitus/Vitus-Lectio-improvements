@@ -6,7 +6,6 @@
 
 
 <br>
-
 A free and open source browser extension for Lectio.
 
 Dette er en fork af [FOSS Lectio Improvements](https://github.com/logicguy1/FOSS-Lectio-improvements/tree/chrome) som fjerner nogle af de ting som ikke virker eller efter min mening ikke rigtig gør lectio bedre. Jeg bruger selv også [Lectio++](https://chromewebstore.google.com/detail/lectio++/ldjoanojmkabkhjkjaakpcgncbhogndp) så ting som "Assignment deadline countdown timer with colors" har jeg bare fjernet da det ikke virkede og [Lectio++](https://chromewebstore.google.com/detail/lectio++/ldjoanojmkabkhjkjaakpcgncbhogndp) aligevæl har den funktion, bare hvor det virker. 
