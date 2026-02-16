@@ -2,18 +2,13 @@
 
 ![Logo]
 
-<h1> FOSS Lectio Improvements </h1>
+<h1> Vitus' Lectio Improvements </h1>
+
 
 <br>
 
-<!-- [![Badge Stars]][Stars] -->
-[![Badge License]][License] 
-![Badge Language] 
-[![Badge Issues]][Issues] 
-[![Badge Pull Requests]][Pull Requests] 
-[![Badge Pull Requests Closed]][Pull Requests Closed] 
-
-<br>
+Dette er en fork af (FOSS Lectio Improvements)[https://github.com/logicguy1/FOSS-Lectio-improvements/tree/chrome] som fjerner nogle af de ting som ikke virkler eller efter min mening ikke rigtig gør lectio bedre. Jeg bruger selv også (Lectio++)[https://chromewebstore.google.com/detail/lectio++/ldjoanojmkabkhjkjaakpcgncbhogndp] så ting som "Assignment deadline countdown timer with colors" har jeg bare fjernet da det ikke virkede og (Lectio++)[https://chromewebstore.google.com/detail/lectio++/ldjoanojmkabkhjkjaakpcgncbhogndp] aligevæl har den funktion, bare hvor det virker. 
+Denne fork er derfor også kun en Chrome-udvidelse da det nok giver mere mening at fikse det som der er fejl i, i en firefox version, istedet for at fjerne det.
 
 
 A free and open source browser extension for Lectio.
@@ -28,7 +23,6 @@ This extension offers numerous QoL[^1] features to Lectio while maintaining most
 **[<kbd> <br> Features <br> </kbd>][Features]** 
 **[<kbd> <br> About <br> </kbd>][About]** 
 **[<kbd> <br> Gallery <br> </kbd>][Gallery]** 
-**[<kbd> <br> Contribute <br> </kbd>][Contribute]**
 
 ---
 
@@ -37,27 +31,22 @@ This extension offers numerous QoL[^1] features to Lectio while maintaining most
 </div>
 
 # Features
-  * Multi Browser Support
+  * Multi Browser Support (Alle som kan bruge chrome-udvidelser)
   * Assignment filtering based on delivered and missing status
-  * Assignment deadline countdown timer with colors 
-  * Profile images in messages
   * Colored schedule blocks
   * Schedule colors highlighting cancelled and changed classes 
   * A wide responsive layout 
   * Colored grades 
-  * and much more soon to be added...
 
 <br>
 
 # Installation
 
-### Mozilla Addons
+~~### Chrome Web Store~~
 
-[Mozilla]
+~~[Chrome]~~
 
-### Chrome Web Store
-
-[Chrome]
+Under "Administrer udvidelser"(chrome://extensions/) slå Udviklertilstand til og tryk på "Indlæs upakket".
 
 <br>
 
@@ -65,17 +54,14 @@ This extension offers numerous QoL[^1] features to Lectio while maintaining most
 
 This extensions primary focus is QoL features with a small apperance overhaul. We wanted to provide a FOSS[^2] extension alternative, where every student or teacher using Lectio could participate in the development. 
 
-The open nature of this project also ensures that development can continue past interest of the original developers. With the closed source extension "Lectio Improver" now being abandoned, we feel like this is the optimal time for you to jump aboard and [help](/CONTRIBUTING.md) this project become something **big!**
 
 <br>
 
 # Gallery
 <div align = center>
  
-![Gallery1]
 ![Gallery2]
 ![Gallery3]
-![Gallery4]
 
 </div>
 
@@ -88,19 +74,12 @@ The open nature of this project also ensures that development can continue past 
 
 [Stars]: https://starchart.cc/logicguy1/FOSS-Lectio-improvements
 
-[Issues]: https://github.com/logicguy1/FOSS-Lectio-improvements/issues
-[License]: /LICENSE
-[Pull Requests]: https://github.com/logicguy1/FOSS-Lectio-improvements/pulls
-[Pull Requests Closed]: https://github.com/logicguy1/FOSS-Lectio-improvements/pulls?q=is%3Apr+is%3Aclosed
-
 [Install]: #Installation
 [Features]: #Features
 [About]: #About
 [Gallery]: #Gallery
-[Contribute]: /CONTRIBUTING.md
 
-[Mozilla]: https://addons.mozilla.org/en-US/firefox/addon/foss-lectio-improvements/
-[Chrome]: https://chromewebstore.google.com/detail/dpkemhpefffgmciiijaakddhlllcfplh
+[Chrome]: https://github.com/EmilVitus/Vitus-Lectio-improvements
 
 <!----------------------------------{ Images }--------------------------------->
 
@@ -108,13 +87,3 @@ The open nature of this project also ensures that development can continue past 
 [Gallery1]: /assets/gallery/assignment_countdown_colors.png
 [Gallery2]: /assets/gallery/schedule_colors.png
 [Gallery3]: /assets/gallery/colored_grades.png
-[Gallery4]: /assets/gallery/message_profile_pictures.png
-
-<!----------------------------------{ Badges }--------------------------------->
-
-[Badge Issues]: https://img.shields.io/github/issues/logicguy1/FOSS-Lectio-improvements
-[Badge License]: https://img.shields.io/github/license/logicguy1/FOSS-Lectio-improvements
-[Badge Pull Requests]: https://img.shields.io/github/issues-pr/logicguy1/FOSS-Lectio-improvements
-[Badge Pull Requests Closed]: https://img.shields.io/github/issues-pr-closed-raw/logicguy1/FOSS-Lectio-improvements
-[Badge Stars]: https://img.shields.io/github/stars/logicguy1/FOSS-Lectio-improvements
-[Badge Language]: https://img.shields.io/github/languages/top/logicguy1/FOSS-Lectio-improvements
