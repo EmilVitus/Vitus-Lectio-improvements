@@ -33,7 +33,7 @@ Denne fork er derfor også kun en Chrome-udvidelse da det nok giver mere mening 
   * Assignment filtering based on delivered and missing status
   * Colored schedule blocks
   * Schedule colors highlighting cancelled and changed classes 
-  * A wide responsive layout 
+  * A wide responsive layout (I Skema)
   * Colored grades 
 
 <br>
