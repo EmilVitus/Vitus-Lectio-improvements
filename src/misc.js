@@ -36,10 +36,14 @@ const masterPageNav = document.querySelector("#s_m_HeaderContent_subnav_div.ls-m
 if (masterPageNav) {
   // Settings tab renames and changes to href
   const profileTab = masterPageNav.querySelector("#s_m_HeaderContent_subnavigator_ctl12");
-  const schoolId = profileTab.getAttribute("href").match(/\/lectio\/(?<id>\d*)\/indstillinger/).groups.id;
+  const href = profileTab?.getAttribute("href");
+  const match = href?.match(/\/lectio\/(?<id>\d*)\/indstillinger/);
+  const schoolId = match?.groups?.id;
 
-  profileTab.innerText = "Profil & FOSS Improver Settings";
-  profileTab.setAttribute("href", `/lectio/${schoolId}/indstillinger/AdgangIndstillinger.aspx`);
+  if (schoolId !== undefined) {
+    profileTab.innerText = "Profil & FOSS Improver Settings";
+    profileTab.setAttribute("href", `/lectio/${schoolId}/indstillinger/AdgangIndstillinger.aspx`);
+  }
 
   const currentURL = window.location.href;
   const regex = /\/indstillinger\//;
