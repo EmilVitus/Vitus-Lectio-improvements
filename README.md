@@ -7,13 +7,11 @@
 
 <br>
 
-Dette er en fork af [FOSS Lectio Improvements](https://github.com/logicguy1/FOSS-Lectio-improvements/tree/chrome) som fjerner nogle af de ting som ikke virkler eller efter min mening ikke rigtig gør lectio bedre. Jeg bruger selv også [Lectio++](https://chromewebstore.google.com/detail/lectio++/ldjoanojmkabkhjkjaakpcgncbhogndp) så ting som "Assignment deadline countdown timer with colors" har jeg bare fjernet da det ikke virkede og [Lectio++](https://chromewebstore.google.com/detail/lectio++/ldjoanojmkabkhjkjaakpcgncbhogndp) aligevæl har den funktion, bare hvor det virker. 
-Denne fork er derfor også kun en Chrome-udvidelse da det nok giver mere mening at fikse det som der er fejl i, i en firefox version, istedet for at fjerne det.
-
-
 A free and open source browser extension for Lectio.
 
-This extension offers numerous QoL[^1] features to Lectio while maintaining most of its familiar appearance and layout. This enables you to use Lectio without having to adapt to a new user interface.
+Dette er en fork af [FOSS Lectio Improvements](https://github.com/logicguy1/FOSS-Lectio-improvements/tree/chrome) som fjerner nogle af de ting som ikke virker eller efter min mening ikke rigtig gør lectio bedre. Jeg bruger selv også [Lectio++](https://chromewebstore.google.com/detail/lectio++/ldjoanojmkabkhjkjaakpcgncbhogndp) så ting som "Assignment deadline countdown timer with colors" har jeg bare fjernet da det ikke virkede og [Lectio++](https://chromewebstore.google.com/detail/lectio++/ldjoanojmkabkhjkjaakpcgncbhogndp) aligevæl har den funktion, bare hvor det virker. 
+Denne fork er derfor også kun en Chrome-udvidelse da det nok giver mere mening at fikse det som der er fejl i, i en firefox version, istedet for at fjerne det.
+
 
 <br>
 
@@ -46,15 +44,15 @@ This extension offers numerous QoL[^1] features to Lectio while maintaining most
 
 ~~[Chrome]~~
 
-Under "Administrer udvidelser"(chrome://extensions/) slå Udviklertilstand til og tryk på "Indlæs upakket".
+Under "Administrer udvidelser" (chrome://extensions/) slå Udviklertilstand til og tryk på "Indlæs upakket".
 
 <br>
 
 # About
 
-This extensions primary focus is QoL features with a small apperance overhaul. We wanted to provide a FOSS[^2] extension alternative, where every student or teacher using Lectio could participate in the development. 
+This extensions primary focus is QoL features with a small apperance overhaul.
 
-
+This extension offers numerous QoL[^1] features to Lectio while maintaining most of its familiar appearance and layout. This enables you to use Lectio without having to adapt to a new user interface.
 <br>
 
 # Gallery
@@ -68,11 +66,8 @@ This extensions primary focus is QoL features with a small apperance overhaul. W
 <!--------------------------------{ Footnotes }-------------------------------->
 
 [^1]: Quality of life.
-[^2]: Free and open source.
 
 <!---------------------------------{ Labels }---------------------------------->
-
-[Stars]: https://starchart.cc/logicguy1/FOSS-Lectio-improvements
 
 [Install]: #Installation
 [Features]: #Features
