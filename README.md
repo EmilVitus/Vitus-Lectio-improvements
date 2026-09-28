@@ -1,3 +1,13 @@
+# ⚠️Arkiveret, ny version tilgængelig⚠️
+**Dette repo er arkiveret og bliver ikke længere opdateret.**
+Jeg har i stedet lavet en fork af Lectio++, som du kan finde her:
+https://github.com/EmilVitus/Vitus-Lectio-improvementsPP
+
+
+---
+
+
+
 <div align = center>
 
 ![Logo]
